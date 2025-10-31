@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayulink - Personal Wellness Dashboard</title>
+    <link rel="stylesheet" href="HealthTracker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&family=Merriweather:wght@300;400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>Ayu<span>link</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Goals</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#" id="themeToggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </a></li>
+                    <li><a href="login.html" class="logout-btn">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h2>Welcome back, User!</h2>
+                <p>Track your health progress and stay motivated with Ayulink. Enter your name below to personalize your dashboard.</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card animate-card">
+                    <div class="card-icon heart">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Heart Rate</h3>
+                        <p class="value">72 <span>bpm</span></p>
+                        <div class="progress-bar">
+                            <div class="progress heart-progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card animate-card">
+                    <div class="card-icon steps">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Steps</h3>
+                        <p class="value">8,432 <span>/10,000</span></p>
+                        <div class="progress-bar">
+                            <div class="progress steps-progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card animate-card">
+                    <div class="card-icon sleep">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sleep</h3>
+                        <p class="value">7.2 <span>hrs</span></p>
+                        <div class="progress-bar">
+                            <div class="progress sleep-progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card animate-card">
+                    <div class="card-icon water">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Water</h3>
+                        <p class="value">6 <span>/8 glasses</span></p>
+                        <div class="progress-bar">
+                            <div class="progress water-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="health-sections">
+                <div class="section cardio-section animate-section">
+                    <h3><i class="fas fa-running"></i> Cardio Activity</h3>
+                    <div class="activity-chart">
+                        <div class="chart-bar" style="height: 70%">
+                            <span>Mon</span>
+                        </div>
+                        <div class="chart-bar" style="height: 85%">
+                            <span>Tue</span>
+                        </div>
+                        <div class="chart-bar" style="height: 60%">
+                            <span>Wed</span>
+                        </div>
+                        <div class="chart-bar" style="height: 90%">
+                            <span>Thu</span>
+                        </div>
+                        <div class="chart-bar" style="height: 75%">
+                            <span>Fri</span>
+                        </div>
+                        <div class="chart-bar" style="height: 40%">
+                            <span>Sat</span>
+                        </div>
+                        <div class="chart-bar" style="height: 55%">
+                            <span>Sun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section nutrition-section animate-section">
+                    <h3><i class="fas fa-apple-alt"></i> Nutrition</h3>
+                    <div class="nutrition-stats">
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <div class="nutrition-bar">
+                                <div class="nutrition-progress protein-progress"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbs</p>
+                            <div class="nutrition-bar">
+                                <div class="nutrition-progress carbs-progress"></div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <div class="nutrition-bar">
+                                <div class="nutrition-progress fat-progress"></div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Upload Section -->
+            <div class="health-form-section animate-section">
+                <h3><i class="fas fa-file-upload"></i> Upload Medical Documents</h3>
+                <div class="file-upload-section">
+                    <div id="dropArea" class="drop-area">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <p>Drag & drop your files here</p>
+                        <p class="file-types">Supports: PDF, JPEG, JPG</p>
+                        <button type="button" id="browseBtn" class="submit-btn browse-btn">Browse Files</button>
+                        <input type="file" id="fileInput" accept=".pdf,.jpeg,.jpg" multiple style="display: none;">
+                    </div>
+                    <div id="fileList" class="file-list"></div>
+                    <button type="button" id="uploadBtn" class="submit-btn" style="display: none;">Upload Files</button>
+                </div>
+            </div>
+
+            <!-- Daily Health Metrics Section -->
+            <div class="health-form-section animate-section">
+                <h3><i class="fas fa-heartbeat"></i> Daily Health Metrics</h3>
+                <form id="healthMetricsForm" class="health-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="heartBpm">Heart Rate (BPM)</label>
+                            <input type="number" id="heartBpm" name="heartBpm" placeholder="Enter your heart rate" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="steps">Steps</label>
+                            <input type="number" id="steps" name="steps" placeholder="Enter steps count" min="0">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="sleepHours">Sleep (Hours)</label>
+                            <input type="number" id="sleepHours" name="sleepHours" step="0.1" placeholder="Hours slept last night" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="waterGlasses">Water (Glasses)</label>
+                            <input type="number" id="waterGlasses" name="waterGlasses" placeholder="Glasses consumed today" min="0">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-save"></i> Save Metrics
+                    </button>
+                </form>
+            </div>
+
+            <!-- OCR Results Section -->
+            <div class="health-form-section animate-section" id="ocrResultsSection" style="display: none;">
+                <h3><i class="fas fa-file-alt"></i> OCR Results</h3>
+                <div class="ocr-results-container">
+                    <div class="ocr-summary">
+                        <h4>Extracted Information</h4>
+                        <div id="ocrSummary" class="ocr-summary-content"></div>
+                    </div>
+                    <div class="ocr-details">
+                        <h4>Full OCR Text</h4>
+                        <div id="ocrFullText" class="ocr-full-text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goals-section animate-section">
+                <h3><i class="fas fa-bullseye"></i> Daily Goals</h3>
+                <div class="goals-container">
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <h4>Morning Run</h4>
+                            <p>30 minutes jogging</p>
+                        </div>
+                        <div class="goal-status completed">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <h4>Drink Water</h4>
+                            <p>8 glasses daily</p>
+                        </div>
+                        <div class="goal-status in-progress">
+                            <span>6/8</span>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <h4>Meditation</h4>
+                            <p>15 minutes mindfulness</p>
+                        </div>
+                        <div class="goal-status pending">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-info">
+                            <h4>Vitamins</h4>
+                            <p>Daily supplements</p>
+                        </div>
+                        <div class="goal-status pending">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2023 Ayulink. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="HealthTracker.js"></script>
+</body>
+</html>
