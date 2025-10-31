@@ -1,1 +1,0 @@
-Patient Name: John Doe\nDate: 2023-10-15\nDiagnosis: Routine Checkup\nBlood Pressure: 120/80 mmHg\nHeart Rate: 72 bpm\nGlucose: 95 mg/dL\nCholesterol: 180 mg/dL\nPrescription: Vitamin D 1000 IU daily
