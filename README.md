@@ -33,10 +33,7 @@ AyuLink is an AI-powered healthcare web application designed to help users easil
 |-----------|-------------------|
 | *Frontend* | React.js / Next.js / HTML / CSS / JavaScript |
 | *Backend* | Node.js / Express.js |
-| *Database* | MongoDB / Firebase (depending on setup) |
-| *AI & OCR* | Python (Tesseract OCR, OpenAI API, or similar) |
-| *Authentication* | JWT / Firebase Auth |
-| *Cloud Storage* | AWS S3 / Firebase Storage |
+| *AI & OCR* | Python (Tesseract OCR, OpenAI API) |
 
 ---
 
@@ -50,17 +47,31 @@ AyuLink is an AI-powered healthcare web application designed to help users easil
 
 ---
 
-##  Screenshots (Optional)
+##  Screenshots
 
-dd screenshots of your UI once available
 
-Login / Signup Page
+<img width="1919" height="974" alt="Screenshot 2025-11-04 230921" src="https://github.com/user-attachments/assets/4c5912f9-cec4-49e9-8be3-400b47f2cb7b" />
 
-Dashboard with Upload Section
 
-OCR Report Summary Output
+<img width="1918" height="976" alt="Screenshot 2025-11-04 231907" src="https://github.com/user-attachments/assets/81109a1a-c28b-4e63-87b3-4555ec4b13d6" />
 
-AI Assistant Chat Interface
+
+
+## Login / Signup Page
+<img width="1919" height="969" alt="Screenshot 2025-11-04 231955" src="https://github.com/user-attachments/assets/1a2c302c-42b4-4060-bb8b-8a7990b2ab19" />
+
+## Dashboard with Upload Section
+<img width="1919" height="977" alt="Screenshot 2025-11-04 232040" src="https://github.com/user-attachments/assets/ca45640f-0789-492c-a21e-63993f5e4089" />
+
+## OCR Report Summary Output
+
+<img width="1913" height="974" alt="Screenshot 2025-11-04 234334" src="https://github.com/user-attachments/assets/4e0bc3ad-3324-40a2-a7fd-21a2c249c762" />
+
+
+<img width="1919" height="972" alt="Screenshot 2025-11-04 234519" src="https://github.com/user-attachments/assets/a93d6e37-12c8-420c-b459-27a698eb99b6" />
+
+## AI Assistant Chat Interface
+<img width="1918" height="970" alt="Screenshot 2025-11-04 234438" src="https://github.com/user-attachments/assets/7b2ae93c-0d5b-402e-8531-95466a0ba669" />
 
 
 ---
