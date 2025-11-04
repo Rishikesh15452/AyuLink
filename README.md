@@ -82,8 +82,7 @@ To run this project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/AyuLink.git
-
+git clone https://github.com/Rishikesh15452/AyuLink.git
 # Navigate to the project directory
 cd AyuLink
 
@@ -97,68 +96,37 @@ For Python-based AI/OCR modules, ensure you set up the environment:
 
 pip install -r requirements.txt
 
+```
 
 ---
-
-🔒 Security & Privacy
+## Security & Privacy
 
 User data and reports are encrypted and stored securely.
-
 AI responses are generated dynamically without storing sensitive medical details.
-
 Follows HIPAA/GDPR-compliant design principles (for future scalability).
 
 
 
 ---
 
-🌟 Future Enhancements
+## Future Enhancements
 
 Integration with wearable health devices
-
 Advanced medical term explanations using AI models
-
 Doctor consultation or telemedicine module
-
 Health progress tracker with report comparison
 
 
 
 ---
 
-🤝 Contributing
+## Contributing
 
 Contributions are always welcome!
 
 1. Fork the repository
-
-
 2. Create a new branch (feature/new-feature)
-
-
 3. Commit your changes
-
-
 4. Push and create a Pull Request
 
-
-
-
 ---
-
-📧 Contact
-
-👤 Developer: S M Rishikesh Yadav
-📍 Hyderabad, India
-📩 Email: [your.email@example.com]
-🔗 GitHub: github.com/your-username
-
-
----
-
-🩵 “AyuLink — Connecting Health with Intelligence.”
-
----
-
-Would you like me to make it more *technical (developer-focused)* or *presentation-style (for portfolio and recruiters)*?  
-I can format it accordingly — for example, adding badges, emojis, and styling for a polished GitHub look.
