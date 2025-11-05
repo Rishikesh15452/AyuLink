@@ -70,7 +70,7 @@ AyuLink is an AI-powered healthcare web application designed to help users easil
 
 <img width="1919" height="972" alt="Screenshot 2025-11-04 234519" src="https://github.com/user-attachments/assets/a93d6e37-12c8-420c-b459-27a698eb99b6" />
 
-## AI Assistant Chat Interface
+## Arogya Paarth - AI Assistant Chat Interface
 <img width="1918" height="970" alt="Screenshot 2025-11-04 234438" src="https://github.com/user-attachments/assets/7b2ae93c-0d5b-402e-8531-95466a0ba669" />
 
 
