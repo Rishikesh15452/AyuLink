@@ -4,6 +4,7 @@
 AyuLink is an AI-powered healthcare web application designed to help users easily *analyze, understand, and interact* with their medical reports. By combining *OCR technology* with *AI assistance*, AyuLink bridges the gap between complex lab data and user-friendly insights.
 
 ---
+check out the link:-https://sunny-travesseiro-6c77e4.netlify.app/
 
 ## Features
 
